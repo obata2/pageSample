@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Portfolio<span>.</span></div>
+            <div class="nav-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">ホーム</a></li>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="tag">IT Student</div>
+                <h1>未来を創る<span>テクノロジー</span></h1>
+                <p>技術を通じて、より良い世界づくりに貢献することを目指しています。</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">プロジェクトを見る</a>
+                    <a href="#contact" class="btn secondary">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>自己紹介</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Profile">
+                </div>
+                <div class="about-text">
+                    <p>私はIT技術に情熱を持つ学生です。新しい技術を学び、革新的なソリューションを作ることに喜びを感じています。</p>
+                    <div class="tabs">
+                        <button class="tab active" data-tab="education">学歴</button>
+                        <button class="tab" data-tab="experience">経験</button>
+                        <button class="tab" data-tab="interests">興味</button>
+                    </div>
+                    <div class="tab-content active" id="education">
+                        <div class="education-item">
+                            <h4>情報工学科</h4>
+                            <p>工科大学 (2021 - 現在)</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <div class="experience-item">
+                            <h4>インターンシップ</h4>
+                            <p>テクノロジー企業 (2023夏)</p>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="interests">
+                        <ul>
+                            <li>Web開発</li>
+                            <li>人工知能</li>
+                            <li>データサイエンス</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>スキル</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>プログラミング言語</h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML & CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>プロジェクト</h2>
+            <div class="project-filters">
+                <button class="filter active" data-filter="all">すべて</button>
+                <button class="filter" data-filter="web">Web開発</button>
+                <button class="filter" data-filter="app">アプリ開発</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>ポートフォリオサイト</h3>
+                        <p>HTML, CSS, JavaScriptを使用した応答性の高いウェブサイト</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>タスク管理アプリ</h3>
+                        <p>シンプルで使いやすいタスク管理アプリケーション</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">送信する</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>メール</h4>
+                        <p>contact@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>所在地</h4>
+                        <p>東京都渋谷区</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
